@@ -47,6 +47,8 @@
   - 实现一个简单的Web应用（如Todo List）
   - 部署和发布项目
 
+#### 6. [数据结构](./ts_ds.md)
+
 ### 推荐书籍
 
 1. **《You Don't Know JS》系列** by Kyle Simpson
