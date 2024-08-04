@@ -38,3 +38,32 @@ sayHello('World');
 ```
 
 编译后，会生成相应的 index.js 文件，您可以在支持 JavaScript 的环境中运行该文件。
+```sh
+node index.js
+```
+
+### 不编译情况下测试TS代码
+为了方便也可以使用ts-node在不把ts文件编译成js文件情况下测试代码。
+执行下面代码安装ts-node
+```sh
+npm install -D ts-node
+```
+这会生成一个package.json以及package-lock.json
+打开package.json，添加一个script脚本，方便执行
+```json
+{
+  "scripts":{
+    "dev":"ts-node index.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
+```
+执行run dev测试index.ts中的代码
+```sh
+npm run dev
+```
+
+### 安装vscode中的AI开发助手
+在vscode的插件中，搜索codeium点击install，可以帮助你安装一个智能AI助手，可以帮助你学习。
